@@ -1,0 +1,8 @@
+#!/bin/sh
+case $BLOCK_BUTTON in
+	1) notify-send "SHARES" "NDQ
+$: $(asx -c ndq | sed -n '5p' | awk '{print $2}')
+%: $(asx -c ndq | sed -n '5p' | awk '{print $4}')%" ;;
+esac
+
+printf " "
