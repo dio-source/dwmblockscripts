@@ -1,4 +1,7 @@
 #!/bin/sh
+
+# REQUIRES (https://github.com/matthewhartman/asxticker)
+
 case $BLOCK_BUTTON in
 	1) notify-send "SHARES" "NDQ
 $: $(asx -c ndq | sed -n '5p' | awk '{print $2}')
